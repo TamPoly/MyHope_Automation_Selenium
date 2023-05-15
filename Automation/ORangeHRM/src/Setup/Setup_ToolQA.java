@@ -1,0 +1,28 @@
+package Setup;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Setup_ToolQA {
+
+	public static WebDriver driver = null;
+
+	public static void Setup() {
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\khoa vang\\Desktop\\Coding\\resources\\Selenium\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
+		driver.navigate().to("https://demoqa.com");
+		
+	}
+
+	public static void CloseProgram() throws Exception {
+		Thread.sleep(2000);
+		driver.quit();
+	}
+}

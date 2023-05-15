@@ -1,0 +1,30 @@
+package Locators;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Locators {
+
+	public static void main(String[] args) throws Exception {
+
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\khoa vang\\Desktop\\Coding\\resources\\Selenium\\chromedriver.exe");
+
+		WebDriver driver = new ChromeDriver();
+
+		driver.manage().window().maximize();
+		driver.navigate().to("https://www.selenium.dev");
+		System.out.println(driver.getPageSource());
+		Thread.sleep(5000);
+
+		// Đối tượng của WebElement
+		WebElement username = driver.findElement(By.class("td-home"));
+
+		// Quit Browser
+		driver.quit();
+
+	}
+
+}

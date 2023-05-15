@@ -1,0 +1,7 @@
+INDEX VERSION 1.132+C:\Users\khoa vang\eclipse-workspace\.metadata\.plugins\org.eclipse.jdt.core
+2736318078.index
+1865797976.index
+3481307257.index
+771516180.index
+1019761480.index
+2419486025.index

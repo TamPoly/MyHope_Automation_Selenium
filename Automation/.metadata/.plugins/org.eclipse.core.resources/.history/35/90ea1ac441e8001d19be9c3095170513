@@ -1,0 +1,31 @@
+package Locator;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Event {
+
+	WebDriver driver = new ChromeDriver();
+
+	public void viewEmployee() {
+		WebElement viewPIM = main
+				.findElement(By.xpath("//span[@class='oxd-text oxd-text--span oxd-main-menu-item--name'][normalize-space()='PIM']"))
+				.click();
+
+	}
+
+	public void checkbox() {
+
+	}
+
+	public void radio() {
+
+	}
+
+	public void combobox() {
+
+	}
+
+}

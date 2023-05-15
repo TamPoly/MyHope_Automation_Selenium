@@ -1,0 +1,19 @@
+package OOP;
+
+public class Tinh_Da_hinh {
+
+	public static void main(String[] args) {
+		
+		void mesRun() {
+			System.out.println("Con chạy bộ");
+		}
+
+	}
+
+}
+
+class Bike{
+	void mesRun() {
+		System.out.println("Cha chạy bộ");
+	}
+}

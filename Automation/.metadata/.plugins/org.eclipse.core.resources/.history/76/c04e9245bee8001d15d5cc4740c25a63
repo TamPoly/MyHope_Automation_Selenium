@@ -1,0 +1,43 @@
+package Locator;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class Event_ToolQA {
+
+	public static WebDriver driver = null;
+
+	public static void Element() throws Exception {
+		driver.findElement(By.xpath("//h5[normalize-space()='Elements']")).click();
+	}
+
+	public static void checkbox() throws Exception {
+		Boolean statusCheckbox = driver.findElement(By.xpath("//label[@for='tree-node-home']")).isSelected();
+
+		if (statusCheckbox == false) {
+			System.out.println("Chưa được check");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.xpath("//label[@for='tree-node-home']")).click();
+			Thread.sleep(1000);
+			
+			WebElement checkbox = driver.findElement(By.xpath("//span[normalize-space()='You have selected :']"));
+			if (checkbox.isDisplayed() == true) {
+				System.out.println("Vừa chọn xong");
+				System.out.println(checkbox.getText());
+			}
+		} else {
+			System.out.println("Đã được check");
+		}
+	}
+
+	public void radio() {
+
+	}
+
+	public void combobox() {
+
+	}
+
+}

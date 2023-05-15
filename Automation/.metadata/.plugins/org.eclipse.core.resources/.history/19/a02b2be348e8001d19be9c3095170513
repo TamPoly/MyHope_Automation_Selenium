@@ -1,0 +1,40 @@
+package Locator;
+
+import java.sql.Driver;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Event {
+
+	WebDriver driver = new ChromeDriver();
+
+	public void viewEmployee() throws InterruptedException {
+		driver.findElement(
+				By.xpath("//span[@class='oxd-text oxd-text--span oxd-main-menu-item--name'][normalize-space()='PIM']"))
+				.click();
+		System.out.println("PIM screen");
+		Thread.sleep(2000);
+
+		driver.findElement(By.xpath("//body/div[@id='app']/div[@class='oxd-layout']/div[@class='oxd-layout-container']/div[@class='oxd-layout-context']/div[@class='orangehrm-background-container']/div[@class='orangehrm-paper-container']/div[@class='orangehrm-container']/div[@role='table']/div[1]/div[1]/div[1]")).click();
+		System.out.println("View Employee screen");
+		Thread.sleep(2000);
+		driver.quit();
+	}
+
+	public void checkbox() {
+
+	}
+
+	public void radio() {
+
+	}
+
+	public void combobox() {
+
+	}
+	
+
+}

@@ -1,0 +1,40 @@
+package basic_funtions;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+import Setup.Setup_ToolQA;
+
+public class Run_Event_ToolQA extends Setup_ToolQA {
+
+	public static void main(String[] args) throws Exception {
+
+		Setup();
+		driver.navigate().to("https://demoqa.com/elements");
+
+		// View Check box
+		driver.findElement(By.xpath("//span[normalize-space()='Check Box']")).click();
+
+		Boolean statusCheckbox = driver.findElement(By.xpath("//label[@for='tree-node-home']")).isSelected();
+
+		if (statusCheckbox == false) {
+			System.out.println("Chưa được check");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.xpath("//label[@for='tree-node-home']")).click();
+			Thread.sleep(1000);
+			
+			WebElement checkbox = driver.findElement(By.xpath("//span[normalize-space()='You have selected :']"));
+			if (checkbox.isDisplayed() == true) {
+				System.out.println("Vừa chọn xong");
+				System.out.println(checkbox.getText());
+			}
+		} else {
+			System.out.println("Đã được check");
+		}
+
+		CloseProgram();
+
+	}
+
+}

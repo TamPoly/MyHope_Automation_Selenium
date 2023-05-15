@@ -1,0 +1,31 @@
+package Locator;
+
+import java.sql.Driver;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Event_ToolQA {
+
+	static WebDriver driver = null;
+
+	public static void viewEmployee() throws Exception {
+		
+	
+	}
+
+	public void checkbox() {
+
+	}
+
+	public void radio() {
+
+	}
+
+	public void combobox() {
+
+	}
+
+}
