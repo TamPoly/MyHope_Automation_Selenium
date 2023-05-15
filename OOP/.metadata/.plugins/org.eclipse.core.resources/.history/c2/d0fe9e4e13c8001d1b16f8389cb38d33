@@ -1,0 +1,27 @@
+package basic;
+
+public class toan_tu {
+	
+	static int ten = 10;
+	static int five = 5;
+	
+	double four = 4.5;
+	double two = 2.5;
+	
+	float chieu_dai = 20;
+	float chieu_rong = 10;
+	
+	String first_name = "Tâm";
+	String last_name = "Đinh";
+	
+	public static void main(String[] args) {
+		
+		//Cộng, Trừ, Nhân, Chia
+		int tong = ten + five;
+		
+		
+		
+		System.out.println("Tổng giữ 2 số là: " + );
+		
+	}
+}

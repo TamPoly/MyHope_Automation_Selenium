@@ -1,0 +1,13 @@
+package Access_Modifiers;
+
+public class Staff {
+	public String fullName = "Tam";
+	public int age = 21;
+	public boolean gender = true;
+}
+
+class Info {
+	public void getInfo() {
+		System.out.println();
+	}
+}

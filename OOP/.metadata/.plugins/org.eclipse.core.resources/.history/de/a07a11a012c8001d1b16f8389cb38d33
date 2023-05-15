@@ -1,0 +1,16 @@
+package basic;
+
+public class toan_tu {
+	
+	int ten = 10;
+	int five = 5;
+	
+	double four = 4.5;
+	double two = 2.5;
+	
+	
+	
+	public static void main(String[] args) {
+		
+	}
+}

@@ -1,0 +1,12 @@
+package basic;
+
+public class mang {
+	public static void main(String[] args) {
+		/*
+		 * Các cách khai báo mảng
+		 * 		dataType[] arr;
+		 * 		dataType []arr;
+		 * 		dataType arr[];
+ 		 */
+	}
+}

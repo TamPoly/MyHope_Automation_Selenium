@@ -1,0 +1,13 @@
+package Access_Modifiers;
+
+public class Access_Modifiers {
+	
+}
+
+class small {
+	private int data = 40; // không thể gọi từ class khác
+	
+	private void msg() {
+		System.out.println("Không thể gọi ra ngoài");
+	}
+}

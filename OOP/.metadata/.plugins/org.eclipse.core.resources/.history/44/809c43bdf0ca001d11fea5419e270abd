@@ -1,0 +1,32 @@
+package basic;
+
+import java.util.Scanner;
+
+public class vong_lap_for {
+
+	public static void main(String[] args) {
+		// for đơn giản
+		/*
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("Nhập number: ");
+		int number = input.nextInt();
+		
+		for (int i = number; i < 20; i++ ) {
+			System.out.println(i);
+		}
+		*/
+		
+		// for duyệt mảng
+		int arr[] = {1, 2, 3, 6, 7, 8};
+		for (int i : arr) {
+			if(i/2 != 0) {
+				System.out.println(i + " là số chẵn");
+			}
+			else {
+				System.out.println(i + " là số lẽ");
+			}
+		}
+	}
+
+}

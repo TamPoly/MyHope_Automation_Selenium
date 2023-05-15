@@ -1,0 +1,25 @@
+package OOP;
+
+import java.util.Scanner;
+
+public class Student {
+	String name;
+	int age;
+	
+	public void cons(String name, int age) {
+		this.name = name;
+		this.age = age;
+	}
+	
+	public void display() {
+		
+	}
+	
+	public void getInfo() {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Enter name: ");
+		String name = sc.next();
+		System.out.print("Enter age: ");
+	}
+}

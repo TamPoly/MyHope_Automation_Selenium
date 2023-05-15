@@ -1,0 +1,17 @@
+package Access_Modifiers;
+
+public class Access_Modifiers {
+	
+}
+
+
+// private không thể gọi từ class khác, chỉ có thể sử dụng trong cùng class
+class small {
+	private int data = 40; 
+	
+	private void msg() {
+		System.out.println("Không thể gọi ra ngoài");
+	}
+}
+
+

@@ -1,0 +1,17 @@
+package basic;
+
+public class mang {
+	public static void main(String[] args) {
+		/*
+		 * Các cách khai báo mảng
+		 * 		dataType[] arr;
+		 * 		dataType []arr;
+		 * 		dataType arr[];
+		 * 
+		 * Khởi tạo mảng 1 chiều
+		 * 		dataType <tên mảng>[] = new dataType[size];
+ 		 */
+		
+		int a[] = new int[3];
+	}
+}

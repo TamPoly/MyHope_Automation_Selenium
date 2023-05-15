@@ -1,0 +1,18 @@
+package basic;
+
+import java.util.Scanner;
+
+public class vong_lap_for {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Nhập number: ");
+		int number = input.nextInt();
+		
+		for (int i = number; i < 20; i++ ) {
+			System.out.println(i);
+		}
+	}
+
+}

@@ -1,0 +1,58 @@
+package basic;
+
+
+public class RunCode {
+	
+	/*
+	 * Biến local (cục bộ) được khai báo trong các phương thức, hàm contructor, block
+	 * Biến local được lưu trên vùng nhớ STACK của bộ nhớ
+	 * Không sử dụng "access modifier" (public, private, default...) để khai báo biến local 
+	*/
+	
+	public void local() {
+		String name = "Dinh Van Tam";
+		int n = 10;
+		double v = 10.00;
+		System.out.println(n + " & " + v + " là biến local!");
+	}
+
+	/*
+	 * Biến instance (toàn cục) được khai báo trong 1 class, ngoài phương thức, contructor, block
+	 * Biến instance được lưu trong bộ nhớ HEAP
+	 * Được sử dụng "access modifier" để khai báo biến instance, mặc định là "default"
+	 */
+	
+	public class info {
+		//Biến instance "name" kiểu String, có giá trị mặc định là null
+		public String name;
+		
+		//Biến instance "age" kiểu int, có giá trị mặc định là 0
+		private int age;
+		
+		//Sử dụng biến "name" trong 1 contructor
+		public void Student(String name) {
+			this.name = name;
+		}
+		
+		//Sử dụng biến "age" trong phương thức setAge
+		public void setAge(int age) {
+			this.age = age;
+		}
+		
+		public void showMessage() {
+			System.out.println("Tên: " + name);
+			System.out.println("Tuổi: " + age);
+		}
+	}
+	
+	public static void main(String[] args) {
+		System.out.println("==== Start Veriable====");
+		RunCode runCode = new RunCode();
+		runCode.local();
+		
+		System.out.println("=======================");
+		
+				
+	}
+
+}

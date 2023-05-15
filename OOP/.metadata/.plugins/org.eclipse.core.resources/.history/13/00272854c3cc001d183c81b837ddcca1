@@ -1,0 +1,13 @@
+package OOP;
+
+import Access_Modifiers.Access_Modifiers.*;
+
+public class Call_Access_Mod extends 
+ {
+
+	public static void main(String[] args) {
+		Access_Modifiers am = new Access_Modifiers();
+		am	
+	}
+
+}

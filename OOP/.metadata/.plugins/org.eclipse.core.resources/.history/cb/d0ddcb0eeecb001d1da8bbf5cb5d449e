@@ -1,0 +1,45 @@
+package basic;
+
+public class mang_basic {
+	public static void main(String[] args) {
+		/*
+		 * Các cách khai báo mảng
+		 * 		dataType[] arr;
+		 * 		dataType []arr;
+		 * 		dataType arr[];
+		 * 
+		 * Khởi tạo mảng 1 chiều
+		 * 		dataType <tên mảng>[] = new dataType[size];
+ 		 */
+		
+		//Khởi tạo mảng
+		int number[] = new int[3];
+		number[0] = 10;
+		number[1] = 20;
+		number[2] = 30;
+		
+		for(int i = 0; i < number.length; i++) {
+			System.out.print(number[i] + " ");
+		} System.out.println("\n =========================");
+		
+		// Khởi tạo mảng 1 chiều bằng mảng nặc danh
+		String ani[] = {"dog", "cat", "pig", "bird"};
+		
+		for(int i = 0; i < ani.length; i++){
+			System.out.print(ani[i] + " ");
+		} System.out.println("\n =========================");
+		
+		//Duyệt mảng
+		for(String i : ani) {
+			System.out.print(i + " ");
+		}
+		
+		// Bài tập: Gán giá trị của 100 phần tử cho 25
+		int one_hundred[] = new int[100];
+		
+		for(int i = 0; i < one_hundred.length; i++) {
+			one_hundred[i] = 25;
+			System.out.println("Phần tử thứ " + (i+1) "của " + one_hundred[i]);
+		}
+	}
+}

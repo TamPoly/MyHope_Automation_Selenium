@@ -1,0 +1,17 @@
+package basic;
+
+public class convert {
+
+	public static void main(String[] args) {
+		// String to Number
+		String str1 = "10";
+		String str2 = "20";
+		
+		int in1 = Integer.valueOf(str1).intValue();
+		int in2 = Integer.valueOf(str2).intValue();
+		
+		
+
+	}
+
+}

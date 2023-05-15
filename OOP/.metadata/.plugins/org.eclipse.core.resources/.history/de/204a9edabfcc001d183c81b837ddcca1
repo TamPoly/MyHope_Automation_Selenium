@@ -1,0 +1,21 @@
+package Access_Modifiers;
+
+public class Access_Modifiers {
+	
+}
+
+
+// private không thể gọi từ class khác, chỉ có thể sử dụng trong cùng class
+class pri {
+	private int data = 40; 
+	
+	private void msgPri() {
+		System.out.println("Không thể gọi ra ngoài");
+	}
+}
+
+class defa {
+	void msgDefa() {
+		System.out.println("Có thể gọi cùng lớp hoac75 cùng package");
+	}
+}

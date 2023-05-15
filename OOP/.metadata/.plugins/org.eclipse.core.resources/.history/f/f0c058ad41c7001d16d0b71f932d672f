@@ -1,0 +1,15 @@
+package basic;
+
+public class veriable_static {
+	/*
+	 * Biến static được khai báo trong class với từ khóa là static, bên ngoài các phương thức, contructor, block
+	 * Chỉ có duy nhất 1 bản sao của biến static được tạo ra
+	 * Biến static được lưu trữ trong bộ nhớ static riêng
+	 */
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

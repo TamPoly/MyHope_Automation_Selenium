@@ -1,0 +1,47 @@
+package basic;
+
+public class toan_tu {
+	
+	static int ten = 10;
+	static int five = 5;
+	
+	static double four = 4.5;
+	static double total =+ four;
+	static double subtotal = --four;
+	
+	static float chieu_dai = 20;
+	static float chieu_rong = 10;
+	
+	static String first_name = "Tâm";
+	static String last_name = "Đinh";
+	
+	public static void main(String[] args) {
+		
+		//Cộng, Trừ, Nhân, Chia
+		float tong = ten + five;
+		float tru = ten - five;
+		float nhan = ten * five;
+		float chia_nguyen = ten / five;
+		float chia_du = ten % five;
+		
+		//Chu vi, Diện tích
+		float chuvi = (chieu_dai + chieu_rong) * 2;
+		float dientich = chieu_dai * chieu_rong;
+		
+		System.out.println("Tổng giữa 2 số là: " + tong);
+		System.out.println("Hiệu giữa 2 số là: " + tru);
+		System.out.println("Tích giữa 2 số là: " + nhan);
+		System.out.println("Thương chia lấy phần nguyên là: " + chia_nguyen);
+		System.out.println("Thương chia lấy phần dư là: " + chia_du);
+		
+		System.out.println("Chu vi là: " + chuvi);
+		System.out.println("Diện tích là: " + dientich);
+		
+		System.out.println("\n");
+		
+		//Toán tử ++, --
+		System.out.println("Tăng thêm 1 đơn vị: " + total);
+		System.out.println("Giảm đi 1 đơn vị: " + subtotal);
+
+	}
+}

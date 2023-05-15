@@ -1,0 +1,15 @@
+package basic;
+
+public class toan_tu_2 {
+	public static void main(String[] args) {
+		int a = 5;
+		int b = 10;
+		
+		b += a;
+		b = a++;
+		
+		System.out.println(b);
+		System.out.println(b);
+	}
+	
+}

@@ -1,0 +1,12 @@
+package OOP;
+
+import java.util.Scanner;
+
+public class Enter_Student {
+	public static void main(String[] args) {
+		
+		Student sd = new Student();
+		
+		sd.getInfo();
+	}
+}

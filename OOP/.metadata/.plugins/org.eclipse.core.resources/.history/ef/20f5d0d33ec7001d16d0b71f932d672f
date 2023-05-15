@@ -1,0 +1,9 @@
+package basic;
+
+public class veriable_local {
+	public static void main(String[] args) {
+		System.out.println("Hello World!");
+		
+		
+	}
+}

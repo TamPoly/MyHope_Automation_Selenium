@@ -1,0 +1,6 @@
+package Access_Modifiers;
+
+public class Staff {
+	String fullName = "Tam";
+	int age = 21;
+}

@@ -1,0 +1,24 @@
+package basic;
+
+import java.util.Scanner;
+
+public class vong_lap_for {
+
+	public static void main(String[] args) {
+		
+		// for đơn giản
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("Nhập number: ");
+		int number = input.nextInt();
+		
+		for (int i = number; i < 20; i++ ) {
+			System.out.println(i);
+		}
+		
+		// for duyệt mảng
+		int arr[] = {1, 3, 5, 7, 9};
+		
+	}
+
+}

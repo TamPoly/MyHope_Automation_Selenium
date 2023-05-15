@@ -1,0 +1,13 @@
+package basic;
+
+public class convert {
+
+	public static void main(String[] args) {
+		// String to Number
+		String str = "10";
+		
+		int num = Integer.valueOf(str).intValue();
+
+	}
+
+}

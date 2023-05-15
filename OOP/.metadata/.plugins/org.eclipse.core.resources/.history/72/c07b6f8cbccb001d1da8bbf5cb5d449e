@@ -1,0 +1,37 @@
+package basic;
+
+public class mang_basic {
+	public static void main(String[] args) {
+		/*
+		 * Các cách khai báo mảng
+		 * 		dataType[] arr;
+		 * 		dataType []arr;
+		 * 		dataType arr[];
+		 * 
+		 * Khởi tạo mảng 1 chiều
+		 * 		dataType <tên mảng>[] = new dataType[size];
+ 		 */
+		
+		int number[] = new int[3];
+		number[0] = 10;
+		number[1] = 20;
+		number[2] = 30;
+		
+		for(int i = 0; i < number.length; i++) {
+			System.out.print(number[i] + " ");
+		} System.out.println("\n =========================");
+		
+		// Khởi tạo mảng 1 chiều bằng mảng nặc danh
+		String ani[] = {"dog", "cat", "pig", "bird"};
+		
+		for(int i = 0; i < ani.length; i++){
+			System.out.println(ani[i] + " ");
+		} System.out.println("\n =========================");
+		
+		//Duyệt mảng
+		for(String i : ani) {
+			System.out.println(i);
+		}
+		
+	}
+}
